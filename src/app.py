@@ -16,5 +16,5 @@ if st.button("Buscar"):
             st.write(f"Autor: {post['post_author']}")
             st.write(f"Comentários: {post['num_comments']}")
             st.markdown("---")
-    else:
-        st.warning("Nenhum resultado encontrado ou erro na busca.")
+    # else:
+    #     st.warning("Nenhum resultado encontrado ou erro na busca.")
