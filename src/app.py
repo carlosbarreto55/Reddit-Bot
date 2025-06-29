@@ -18,3 +18,4 @@ if st.button("Buscar"):
             st.markdown("---")
     else:
         st.warning("Nenhum resultado encontrado ou erro na busca.")
+        print (results)
