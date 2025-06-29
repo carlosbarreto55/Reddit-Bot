@@ -52,3 +52,7 @@ reddit-bot/
 ├── app.py
 ├── requirements.txt
 └── README.md
+
+### ⚠️ Important Note on Deployment and Usage ⚠️
+
+Currently, this application is primarily designed for **local execution**. While the project is deployed on Streamlit Community Cloud, you might encounter issues when performing searches directly from the cloud deployment.
