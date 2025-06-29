@@ -5,7 +5,7 @@ st.title ("Reddit Search Bot")
 st.write("Search for reddit posts!")
 
 term = st.text_input ("Input the search term")
-limit = st.slider("Whats the number of posts?",1,10,50)
+limit = st.slider("Whats the number of posts?", 1, 50, 10)
 if st.button("Buscar"):
     searcher = RedditSearcher()
     results = searcher.search_posts(term,limit)
