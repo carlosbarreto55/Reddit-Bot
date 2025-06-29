@@ -8,7 +8,7 @@ term = st.text_input ("Input the search term")
 limit = st.slider("Whats the number of posts?",1,10,50)
 if st.button("Buscar"):
     searcher = RedditSearcher()
-    results = RedditSearcher.search_posts(term,limit)
+    results = searcher.search_posts(term,limit)
     if results :
         for post in results:
             st.subheader(post['title'])
