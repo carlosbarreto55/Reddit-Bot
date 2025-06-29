@@ -66,31 +66,31 @@ class RedditSearcher:
 
 from pprint import pprint
 
-# Supondo que RedditSearcher está no mesmo arquivo ou foi importado corretamente
+# Function to test reddit_searcher.py
 
-def main():
-    searcher = RedditSearcher()
-    termo = input("Digite o termo de busca: ")
-    try:
-        limite = int(input("Quantos posts você quer buscar? "))
-    except ValueError:
-        print("Por favor, digite um número válido.")
-        return
+# def main():
+#     searcher = RedditSearcher()
+#     termo = input("Digite o termo de busca: ")
+#     try:
+#         limite = int(input("Quantos posts você quer buscar? "))
+#     except ValueError:
+#         print("Por favor, digite um número válido.")
+#         return
 
-    resultados = searcher.search_posts(termo, limit=limite)
-    if not resultados:
-        print("Nenhum resultado encontrado ou houve um erro na busca.")
-        return
+#     resultados = searcher.search_posts(termo, limit=limite)
+#     if not resultados:
+#         print("Nenhum resultado encontrado ou houve um erro na busca.")
+#         return
 
-    print(f"\nMostrando {len(resultados)} resultados para '{termo}':\n")
-    for i, post in enumerate(resultados, 1):
-        print(f"Post {i}:")
-        print(f"  Título: {post['title']}")
-        print(f"  Subreddit: {post['subreddit']}")
-        print(f"  Autor: {post['post_author']}")
-        print(f"  Comentários: {post['num_comments']}")
-        print("-" * 40)
+#     print(f"\nMostrando {len(resultados)} resultados para '{termo}':\n")
+#     for i, post in enumerate(resultados, 1):
+#         print(f"Post {i}:")
+#         print(f"  Título: {post['title']}")
+#         print(f"  Subreddit: {post['subreddit']}")
+#         print(f"  Autor: {post['post_author']}")
+#         print(f"  Comentários: {post['num_comments']}")
+#         print("-" * 40)
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
 
