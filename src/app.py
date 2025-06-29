@@ -12,9 +12,11 @@ if st.button("Buscar"):
     if results :
         for post in results:
             st.subheader(post['title'])
-            st.write(f"Subreddit: {post['subreddit']}")
+            st.write(f"Theme: {post['subreddit']}")
             st.write(f"Autor: {post['post_author']}")
             st.write(f"Comentários: {post['num_comments']}")
+            # st.write(f"Link to post: {post['post_url']}")
+            st.markdown(f"[Go to post]({post['post_url']})" )
             st.markdown("---")
     else:
         st.warning("Nenhum resultado encontrado ou erro na busca.")

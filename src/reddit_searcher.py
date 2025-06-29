@@ -50,7 +50,8 @@ class RedditSearcher:
                     'subreddit' : post_data['subreddit'],
                     'post_author' : post_data ['author_fullname'],
                     'num_comments' : post_data['num_comments'],
-                    # 'num_likes': post_data ['likes'] no access
+                    'post_url' : post_data ['permalink'],
+                 
                     })
                 return posts
 
