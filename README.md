@@ -1,49 +1,46 @@
 # Reddit Bot
 
-Um bot em Python para buscar e exibir posts do Reddit por palavra-chave, com interface web moderna usando Streamlit.
+A Python bot to search and display Reddit posts by keyword, with a modern web interface using Streamlit.
 
-## 🚀 Funcionalidades
+## 🚀 Features
 
-- Busca posts do Reddit por palavra-chave, com opções de limite de resultados, ordenação e filtro de tempo.
-- Código organizado com separação clara entre configuração, lógica principal e utilitários.
-- Interface web interativa feita com Streamlit: fácil de usar, sem necessidade de programar.
-- Pronto para deploy gratuito no [Streamlit Community Cloud](https://streamlit.io/cloud).
-- Gerenciamento de ambiente com `venv` e dependências em `requirements.txt`.
-- Estrutura preparada para expansão: fácil adicionar cache, logging, banco de dados ou API REST.
+- Searches Reddit posts by keyword, with options for result limit, sorting, and time filter.
+- Organized code with a clear separation between configuration, main logic, and utilities.
+- Interactive web interface built with Streamlit: easy to use, no programming required.
+- Ready for free deployment on [Streamlit Community Cloud](https://streamlit.io/cloud).
+- Environment management with `venv` and dependencies in `requirements.txt`.
+- Structure prepared for expansion: easy to add cache, logging, database, or REST API.
 
-## 🛠️ Tecnologias
+## 🛠️ Technologies
 
 - Python 3.12+
 - Streamlit
 - Requests
 - python-dotenv
 - pytest
-- WSL (para desenvolvimento Linux no Windows)
+- WSL (for Linux development on Windows)
 
-## 📦 Instalação
+## 📦 Installation
 
-1. Clone o repositório:
-git clone https://github.com/seuusuario/reddit-bot.git
+1. Clone the repository:
+git clone https://github.com/yourusername/reddit-bot.git
 cd reddit-bot
 
-
-2. Crie e ative um ambiente virtual:
+2. Create and activate a virtual environment:
 python3 -m venv venv
-source venv/bin/activate # No Windows: venv\Scripts\activate
+source venv/bin/activate # On Windows: venv\Scripts\activate
 
-
-3. Instale as dependências:
+3. Install the dependencies:
 pip install -r requirements.txt
 
+## 🚦 Usage
 
-## 🚦 Uso
-
-Execute o app Streamlit:
+Run the Streamlit app:
 streamlit run app.py
 
-Digite o termo de busca, escolha a quantidade de posts e veja os resultados no navegador.
+Enter the search term, choose the number of posts, and view the results in your browser.
 
-## 🧩 Estrutura do Projeto
+## 🧩 Project Structure
 
 reddit-bot/
 ├── config.py
